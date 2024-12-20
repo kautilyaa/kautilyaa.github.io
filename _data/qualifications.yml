@@ -1,0 +1,24 @@
+- name: BSc Computer Science (Hons)
+  provider:
+    name: University of Edinburgh
+    url: https://www.ed.ac.uk/
+  period: 2001 - 2005
+  modules:
+    - Algorithms & Data Structures
+    - Database Systems
+    - Computer Graphics
+    - Networks
+
+- name: Fullstack refresher courses
+  provider:
+    name: Boot.Dev
+    url: https://www.boot.dev/
+  period: Jan 2024
+  modules:
+    - Go
+    - Docker
+    - Kubernetes
+    - Python
+    - HTTP
+    - JavaScript
+    - Algorithms

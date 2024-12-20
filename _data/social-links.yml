@@ -1,0 +1,19 @@
+- username: kautilyaa
+  icon: github
+  url: https://github.com/jcarroll-ls
+  note: Work
+
+- username: jonnycarroll
+  icon: github
+  url: https://github.com/jonnycarroll
+  note: Personal
+
+- username: jonny-carroll
+  icon: linkedin
+  url: https://linkedin.com/in/jonny-carroll
+
+- username: jonnycarroll.dev
+  icon: bluesky
+  url: https://bsky.app/profile/jonnycarroll.dev
+
+  #['all', 'data', 'machine-learning', 'backend', 'frameworks', 'languages']
