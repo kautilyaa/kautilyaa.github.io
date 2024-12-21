@@ -1,0 +1,15 @@
+- year: 2023
+  type: Patent
+  title: "Image Similarity Model for Templated Form Processing"
+  description: "A patented model that optimizes image matching for automated document workflows."
+  link: "https://example-patent-link.com"
+- year: 2022
+  type: Publication
+  title: "Optimizing NLP Pipelines for Semantic Data Extraction"
+  description: "Published in the International Journal of Data Science, this paper explores NLP pipeline optimization."
+  link: "https://example-publication-link.com"
+- year: 2021
+  type: Conference Paper
+  title: "Automating Document Structure Analysis Using OCR"
+  description: "Presented at AI Conference 2021, showcasing OCR-based text extraction methods."
+  link: "https://example-conference-link.com"

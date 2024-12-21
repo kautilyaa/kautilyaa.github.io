@@ -1,24 +1,28 @@
-- name: BSc Computer Science (Hons)
+- name: Master of Science in Data Science
   provider:
-    name: University of Edinburgh
-    url: https://www.ed.ac.uk/
-  period: 2001 - 2005
+    name: University of Maryland
+    url: https://www.umd.edu/
+  period: Aug 2023 - May 2026 (Expected)
   modules:
-    - Algorithms & Data Structures
-    - Database Systems
-    - Computer Graphics
-    - Networks
+    - Machine Learning
+    - Natural Language Processing
+    - Big Data Analytics
+    - Statistical Modeling
+    - Data Visualization
+    - Data Engineering
+    - Probablity and Statistics
 
-- name: Fullstack refresher courses
+- name: Bachelor of Technology in Computer Science and Engineering
   provider:
-    name: Boot.Dev
-    url: https://www.boot.dev/
-  period: Jan 2024
+    name: Vellore Institute of Technology
+    url: https://vit.ac.in/
+  period: July 2017 - June 2021
   modules:
-    - Go
-    - Docker
-    - Kubernetes
-    - Python
-    - HTTP
-    - JavaScript
-    - Algorithms
+    - Machine Learning
+    - Image Processing
+    - Algorithms & Data Structures
+    - Operating Systems
+    - Database Management Systems
+    - Computer Networks
+    - Artificial Intelligence
+    - Software Engineering

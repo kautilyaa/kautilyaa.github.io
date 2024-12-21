@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en-GB" class="scroll-smooth" x-data="{
 darkMode: localStorage.theme === 'dark' || ( !('theme' in localStorage) &&
@@ -133,7 +136,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
             <a
               href="#learning-focus"
               class="group dark:hover:text-slate-50 transition-all"
-              >Learning focus
+              >Skills
               <span
                 class="inline-block ml-1 transition-transform group-hover:translate-x-1"
               >
@@ -164,6 +167,39 @@ x-bind:class="darkMode ? 'dark' : '' ">
           </li>
           <li>
             <a
+              href="#projects"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Projects
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#publications"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Publications & Patents
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#achievements"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Achievements
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
               href="#qualifications"
               class="group dark:hover:text-slate-50 transition-all"
               >Qualifications
@@ -179,18 +215,8 @@ x-bind:class="darkMode ? 'dark' : '' ">
           
           <li class="relative">
             <a
-              title="github Work"
-              href="https://github.com/jcarroll-ls"
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-              ><i class="fa-brands fa-github fa-2x"></i
-            ></a>
-          </li>
-          
-          <li class="relative">
-            <a
               title="github Personal"
-              href="https://github.com/jonnycarroll"
+              href="https://github.com/jcarroll-ls"
               target="_blank"
               class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
               ><i class="fa-brands fa-github fa-2x"></i
@@ -220,71 +246,15 @@ x-bind:class="darkMode ? 'dark' : '' ">
         </ul>
       </header>
       <main class="py-16 lg:w-1/2">
-        <!-- prettier-ignore -->
-        <!--
-<section id="about-me" class="mb-24">
-  <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
-    About me
-  </h2>
-  <p class="mb-3">
-    I am a long-time technologist. At the age of eleven, I was building PCs with
-    my father. The web fascinated me as a teenager
-    <a
-      href="https://en.wikipedia.org/wiki/GeoCities"
-      target="_blank"
-      class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-      >#GenerationGeoCities</a
-    >. I have extensive experience in building software, coaching others and
-    leading software teams, particularly in finance and data.
-  </p>
-  <p class="mb-3">
-    Currently, I am contracting as a frontend and DevOps engineer for
-    <a
-      href="https://smeprofessional.co.uk/"
-      class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-      target="_blank"
-      >Scotland's leading property management CRM</a
-    >, in my home city of Edinburgh. So far, I have helped increase sales by
-    over 50% by renovating their primary customer-facing UI, and improved
-    development team efficiency by implementing automated CI/CD pipelines.
-  </p>
-  <p class="mb-3">
-    I have been an Engineering Manager and Senior Engineering Manager at both
-    <a
-      href="https://spotify.com"
-      class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-      target="_blank"
-      >Spotify</a
-    >
-    and
-    <a
-      href="https://natwest.com"
-      class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-      target="_blank"
-      >NatWest</a
-    >. I am grateful to have been privy to world-class leadership training. I
-    have loved helping my teams grow, both personally and collectively.
-  </p>
-  <p class="mb-3 font-semibold text-slate-900 dark:text-slate-100">
-    Taking voluntary redundancy in late 2023 afforded me a rare opportunity to
-    pivot my career. With a decade of effective leadership under my belt, both
-    my
-    <i class="fa-solid fa-brain"></i> and <i class="fa-solid fa-heart"></i> said
-    it is time to get coding again.
-  </p>
-</section>
--->
-
-
-<section id="about-me" class="mb-24">
+        <section id="about-me" class="mb-24">
   <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
     About Me
   </h2>
   <p class="mb-3">
-    I am an aspiring Data Scientist and Machine Learning enthusiast, currently pursuing a Master’s in Data Science at the University of Maryland. With a strong foundation in machine learning, statistical modeling, and big data systems, I am passionate about solving complex problems and driving impactful decisions through data.
+    I am an aspiring Data Scientist pursuing a Master’s in Data Science at the University of Maryland. With expertise in machine learning, statistical modeling, and big data systems, I am passionate about solving complex problems and driving impactful decisions through data, with a specific interest in computer vision applications.
   </p>
   <p class="mb-3">
-    My professional experience includes working as a Data Scientist at 
+    At 
     <a
       href="https://www.optum.com"
       target="_blank"
@@ -292,16 +262,13 @@ x-bind:class="darkMode ? 'dark' : '' ">
     >
       Optum Global Solutions
     </a>, 
-    where I implemented machine learning models and automated data extraction workflows, reducing processing time by 40% and increasing throughput by 32%. Additionally, I developed PaaS modules leveraging NLP techniques and patented an image similarity model for templated form processing.
+    I implemented machine learning models and automated workflows, reducing processing time by 40% and increasing throughput by 32%. My work included PaaS modules, NLP-based automation, and a patented image similarity model for form processing.
   </p>
   <p class="mb-3">
-    My technical expertise includes Python, SQL, Scikit-Learn, TensorFlow, Keras, and cloud platforms like AWS and Azure. I am particularly skilled in deploying scalable solutions and managing complex datasets to derive actionable insights.
-  </p>
-  <p class="mb-3">
-    Previously, I have worked on projects such as OCR-based text matching, automated document structure analysis, and semantic data extraction. I also hold a Bachelor’s in Computer Science from Vellore Institute of Technology and was honored with awards like SIH 2019 for Customer Support Automation.
+    My technical toolkit includes Python, SQL, Scikit-Learn, TensorFlow, and cloud platforms like AWS and Azure. I have experience deploying scalable solutions and deriving actionable insights, particularly in computer vision tasks such as OCR-based text extraction and image analysis.
   </p>
   <p class="mb-3 font-semibold text-slate-900 dark:text-slate-100">
-    My goal is to apply my skills to projects that contribute to meaningful change, whether by optimizing business processes, enhancing user experiences, or improving access to critical information. I thrive in environments that encourage innovation, collaboration, and continuous learning.
+    I aim to leverage my skills and passion for computer vision to deliver impactful solutions that optimize processes, enhance user experiences, and drive innovation.
   </p>
 </section>
 
@@ -309,9 +276,8 @@ x-bind:class="darkMode ? 'dark' : '' ">
   <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
     Learning focus
   </h2>
-  <p class="mb-2">
-    Out of professional necessity or personal curiosity I am currently, or have
-    recently been, diving into the following tech:
+  <p class="mb-2 font-bold">
+    Skills:
   </p>
   <ul class="flex gap-1 flex-wrap mb-4">
     <template
@@ -337,8 +303,64 @@ x-bind:class="darkMode ? 'dark' : '' ">
       <a
         href="https://www.python.org/"
         target="_blank"
-        title="I am using Python because it is a powerful evolution of styling and compliments React beautifully."
+        title="I am using Python The base of everything begins from here."
         style="background-image: url('/assets/tech-logos/python-logo.png')"
+        class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
+      ></a>
+    </li>
+    
+    <li
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === 'frameworks') ? 'opacity-100 block' : 'opacity-0 hidden'"
+    >
+      <a
+        href="https://github.com/"
+        target="_blank"
+        title="I am using GitHub To manage version control and collaborate effectively on projects."
+        style="background-image: url('/assets/tech-logos/github-logo.png')"
+        class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
+      ></a>
+    </li>
+    
+    <li
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === 'backend') ? 'opacity-100 block' : 'opacity-0 hidden'"
+    >
+      <a
+        href="https://www.docker.com/"
+        target="_blank"
+        title="I am using Docker Essential for containerization and deployment in my projects."
+        style="background-image: url('/assets/tech-logos/docker-logo.png')"
+        class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
+      ></a>
+    </li>
+    
+    <li
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === 'machine-learning') ? 'opacity-100 block' : 'opacity-0 hidden'"
+    >
+      <a
+        href="https://huggingface.co/"
+        target="_blank"
+        title="I am using Hugging Face Integral for NLP model training and fine-tuning."
+        style="background-image: url('/assets/tech-logos/hugging-face-logo.png')"
+        class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
+      ></a>
+    </li>
+    
+    <li
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === 'machine-learning') ? 'opacity-100 block' : 'opacity-0 hidden'"
+    >
+      <a
+        href="https://www.tensorflow.org/"
+        target="_blank"
+        title="I am using TensorFlow Provides robust tools for building and deploying ML models."
+        style="background-image: url('/assets/tech-logos/tensorflow-logo.png')"
         class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
       ></a>
     </li>
@@ -349,10 +371,10 @@ x-bind:class="darkMode ? 'dark' : '' ">
       x-bind:class="(activeTag === 'all' || activeTag === 'data') ? 'opacity-100 block' : 'opacity-0 hidden'"
     >
       <a
-        href="https://www.sqlite.org/"
+        href="https://www.microsoft.com/sql-server"
         target="_blank"
-        title="I am using SQLite because I am using this for personal projects."
-        style="background-image: url('/assets/tech-logos/sqlite-logo.png')"
+        title="I am using SQL For structured data queries and management."
+        style="background-image: url('/assets/tech-logos/sql-logo.png')"
         class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
       ></a>
     </li>
@@ -360,13 +382,13 @@ x-bind:class="darkMode ? 'dark' : '' ">
     <li
       style="transition-behavior: allow-discrete"
       class="transition-all"
-      x-bind:class="(activeTag === 'all' || activeTag === 'devops') ? 'opacity-100 block' : 'opacity-0 hidden'"
+      x-bind:class="(activeTag === 'all' || activeTag === 'frameworks') ? 'opacity-100 block' : 'opacity-0 hidden'"
     >
       <a
-        href="https://github.com/features/actions"
+        href="https://www.djangoproject.com/"
         target="_blank"
-        title="I am using GitHub To manage my code versioning."
-        style="background-image: url('/assets/tech-logos/github-logo.png')"
+        title="I am using Django Excellent for developing scalable and robust backend services."
+        style="background-image: url('/assets/tech-logos/django-logo.png')"
         class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
       ></a>
     </li>
@@ -374,13 +396,27 @@ x-bind:class="darkMode ? 'dark' : '' ">
     <li
       style="transition-behavior: allow-discrete"
       class="transition-all"
-      x-bind:class="(activeTag === 'all' || activeTag === 'devops') ? 'opacity-100 block' : 'opacity-0 hidden'"
+      x-bind:class="(activeTag === 'all' || activeTag === 'backend') ? 'opacity-100 block' : 'opacity-0 hidden'"
     >
       <a
-        href="https://www.docker.com/"
+        href="https://azure.microsoft.com/"
         target="_blank"
-        title="I am using Docker because my current contract relies on it for infrastructure management."
-        style="background-image: url('/assets/tech-logos/docker-logo.png')"
+        title="I am using Azure Leveraged for cloud solutions and infrastructure management."
+        style="background-image: url('/assets/tech-logos/azure-logo.png')"
+        class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
+      ></a>
+    </li>
+    
+    <li
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === 'frameworks') ? 'opacity-100 block' : 'opacity-0 hidden'"
+    >
+      <a
+        href="https://code.visualstudio.com/"
+        target="_blank"
+        title="I am using Visual Studio Code The go-to editor for developing and debugging code effectively."
+        style="background-image: url('/assets/tech-logos/vs-code-logo.png')"
         class="block rounded-md border-white dark:border-black hover:border-blue-800 dark:hover:border-blue-400 bg-origin-padding bg-no-repeat border-2 size-16 bg-center bg-cover bg-white transition-all"
       ></a>
     </li>
@@ -822,6 +858,344 @@ x-bind:class="darkMode ? 'dark' : '' ">
   </div>
 </secton>
 
+        <!-- <section
+  id="projects"
+  class="flex flex-col w-full mb-24"
+  x-data="{
+      skip: 1,
+      atBeginning: false,
+      atEnd: false,
+      next() {
+        this.to((current, offset) => current + (offset * this.skip))
+      },
+      prev() {
+        this.to((current, offset) => current - (offset * this.skip))
+      },
+      to(strategy) {
+        let slider = this.$refs.slider
+        let current = slider.scrollTop
+        let offset = slider.firstElementChild.getBoundingClientRect().height
+        slider.scrollTo({ top: strategy(current, offset), behavior: 'smooth' })
+      },
+      disableNextAndPreviousButtons: {
+        'x-intersect:enter.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = true
+          } else if (slideEls[slideEls.length - 1] === this.$el) {
+            this.atEnd = true
+          }
+        },
+        'x-intersect:leave.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = false
+          } else if (slideEls[slideEls.length - 1] === this.$el) {
+            this.atEnd = false
+          }
+        },
+      },
+    }"
+>
+  <div
+    class="flex flex-col w-full"
+    aria-labelledby="projects-label"
+    role="region"
+    tabindex="0"
+    x-on:keydown.up="prev"
+    x-on:keydown.down="next"
+  >
+    <h2
+      class="uppercase font-bold text-black dark:text-white lg:hidden mb-4"
+      id="projects-label"
+    >
+      Projects
+    </h2>
+    <div class="flex items-center justify-end lg:px-2 space-x-2 mb-2">
+      <button
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
+        :class="{ 'opacity-50': atBeginning }"
+        :aria-disabled="atBeginning"
+        x-on:click="prev"
+      >
+        <i class="fa-solid fa-circle-up"></i>
+      </button>
+      <button
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
+        :class="{ 'opacity-50': atEnd }"
+        :aria-disabled="atEnd"
+        x-on:click="next"
+      >
+        <i class="fa-solid fa-circle-down"></i>
+      </button>
+    </div>
+    <ul
+      class="flex flex-col gap-6 overflow-y-scroll no-scrollbar snap-mandatory snap-y w-full max-h-[500px] rounded-2xl"
+      x-ref="slider"
+    >
+      
+      <li
+        class="flex flex-col items-center justify-center w-full snap-start h-full p-4 rounded-2xl bg-white/30 hover:bg-white/40 dark:bg-black/30 dark:hover:bg-black/40 shadow-md transition-colors"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-50">
+          Project A
+        </h3>
+        <p class="text-sm text-slate-700 dark:text-slate-300 mb-2">
+          A description of Project A.
+        </p>
+        <a
+          href="https://example.com/project-a"
+          class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
+          target="_blank"
+        >
+          View Project
+        </a>
+      </li>
+      
+      <li
+        class="flex flex-col items-center justify-center w-full snap-start h-full p-4 rounded-2xl bg-white/30 hover:bg-white/40 dark:bg-black/30 dark:hover:bg-black/40 shadow-md transition-colors"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-50">
+          Project B
+        </h3>
+        <p class="text-sm text-slate-700 dark:text-slate-300 mb-2">
+          A description of Project B.
+        </p>
+        <a
+          href="https://example.com/project-b"
+          class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
+          target="_blank"
+        >
+          View Project
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</section> -->
+<section
+  id="projects"
+  class="flex flex-col w-full mb-24"
+  x-data="{
+      skip: 1,
+      atBeginning: false,
+      atEnd: false,
+      next() {
+        this.to((current, offset) => current + (offset * this.skip))
+      },
+      prev() {
+        this.to((current, offset) => current - (offset * this.skip))
+      },
+      to(strategy) {
+        let slider = this.$refs.slider
+        let current = slider.scrollTop
+        let offset = slider.firstElementChild.getBoundingClientRect().height
+        slider.scrollTo({ top: strategy(current, offset), behavior: 'smooth' })
+      },
+      disableNextAndPreviousButtons: {
+        'x-intersect:enter.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = true
+          } else if (slideEls[slideEls.length - 1] === this.$el) {
+            this.atEnd = true
+          }
+        },
+        'x-intersect:leave.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = false
+          } else if (slideEls[slideEls.length - 1] === this.$el) {
+            this.atEnd = false
+          }
+        },
+      },
+    }"
+>
+  <div
+    class="flex flex-col w-full"
+    aria-labelledby="projects-label"
+    role="region"
+    tabindex="0"
+    x-on:keydown.up="prev"
+    x-on:keydown.down="next"
+  >
+    <h2
+      class="uppercase font-bold text-black dark:text-white lg:hidden mb-4"
+      id="projects-label"
+    >
+      Projects
+    </h2>
+    <div class="flex items-center justify-end lg:px-2 space-x-2 mb-2">
+      <button
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
+        :class="{ 'opacity-50': atBeginning }"
+        :aria-disabled="atBeginning"
+        x-on:click="prev"
+      >
+        <i class="fa-solid fa-circle-up"></i>
+      </button>
+      <button
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
+        :class="{ 'opacity-50': atEnd }"
+        :aria-disabled="atEnd"
+        x-on:click="next"
+      >
+        <i class="fa-solid fa-circle-down"></i>
+      </button>
+    </div>
+    <ul
+      class="flex flex-col gap-6 overflow-y-scroll no-scrollbar snap-mandatory snap-y w-full max-h-[500px] rounded-2xl"
+      x-ref="slider"
+    >
+      
+      <li
+        class="flex flex-col items-center justify-center w-full snap-start h-full p-4 rounded-2xl bg-white/30 hover:bg-white/40 dark:bg-black/30 dark:hover:bg-black/40 shadow-md transition-colors"
+        :style="{
+          backgroundImage: project.image ? `url(${project.image})` : '',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay',
+        }"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-50">
+          Project A
+        </h3>
+        <p class="text-sm text-slate-700 dark:text-slate-300 mb-2">
+          A description of Project A.
+        </p>
+        <a
+          href="https://example.com/project-a"
+          class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
+          target="_blank"
+        >
+          View Project
+        </a>
+      </li>
+      
+      <li
+        class="flex flex-col items-center justify-center w-full snap-start h-full p-4 rounded-2xl bg-white/30 hover:bg-white/40 dark:bg-black/30 dark:hover:bg-black/40 shadow-md transition-colors"
+        :style="{
+          backgroundImage: project.image ? `url(${project.image})` : '',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay',
+        }"
+      >
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-50">
+          Project B
+        </h3>
+        <p class="text-sm text-slate-700 dark:text-slate-300 mb-2">
+          A description of Project B.
+        </p>
+        <a
+          href="https://example.com/project-b"
+          class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
+          target="_blank"
+        >
+          View Project
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+        
+        <section id="achievements" class="mb-24">
+    <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
+      Achievements
+    </h2>
+    
+    <div
+      class="relative grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
+    >
+      <div class="text-sm pb-1 sm:pt-1 sm:pb-0">
+        2019
+        <div class="inline ml-2 sm:ml-0 sm:block text-sm text-slate-500">
+          Competition
+        </div>
+      </div>
+      <div class="sm:col-span-3">
+        <h3
+          class="transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+        >
+          Winner, Smart India Hackathon
+        </h3>
+        <div class="mt-1 mb-4 text-sm text-slate-600 dark:text-slate-400">
+          <p>Developed a customer support automation solution, winning the national hackathon.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="relative grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
+    >
+      <div class="text-sm pb-1 sm:pt-1 sm:pb-0">
+        2022
+        <div class="inline ml-2 sm:ml-0 sm:block text-sm text-slate-500">
+          Recognition
+        </div>
+      </div>
+      <div class="sm:col-span-3">
+        <h3
+          class="transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+        >
+          Top Performer at Optum Global Solutions
+        </h3>
+        <div class="mt-1 mb-4 text-sm text-slate-600 dark:text-slate-400">
+          <p>Awarded for deploying ML models that reduced processing time by 40%.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="relative grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
+    >
+      <div class="text-sm pb-1 sm:pt-1 sm:pb-0">
+        2022
+        <div class="inline ml-2 sm:ml-0 sm:block text-sm text-slate-500">
+          Patent
+        </div>
+      </div>
+      <div class="sm:col-span-3">
+        <h3
+          class="transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+        >
+          Filed Patent for Image Similarity Model
+        </h3>
+        <div class="mt-1 mb-4 text-sm text-slate-600 dark:text-slate-400">
+          <p>Secured a patent for an innovative model in form processing automation.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="relative grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
+    >
+      <div class="text-sm pb-1 sm:pt-1 sm:pb-0">
+        2022
+        <div class="inline ml-2 sm:ml-0 sm:block text-sm text-slate-500">
+          Speaker
+        </div>
+      </div>
+      <div class="sm:col-span-3">
+        <h3
+          class="transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+        >
+          AI for Business Summit
+        </h3>
+        <div class="mt-1 mb-4 text-sm text-slate-600 dark:text-slate-400">
+          <p>Delivered a talk on leveraging computer vision for automation.</p>
+
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
         <section id="qualifications" class="mb-24">
   <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
     Qualifications
@@ -830,9 +1204,9 @@ x-bind:class="darkMode ? 'dark' : '' ">
   <div
     class="grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4"
   >
-    <div class="text-sm pb-1 sm:pt-1 sm:pb-0">2001 - 2005</div>
+    <div class="text-sm pb-1 sm:pt-1 sm:pb-0">Aug 2023 - May 2026 (Expected)</div>
     <a
-      href="https://www.ed.ac.uk/"
+      href="https://www.umd.edu/"
       target="_blank"
       class="group relative sm:col-span-3 block"
     >
@@ -840,13 +1214,92 @@ x-bind:class="darkMode ? 'dark' : '' ">
         class="absolute top-0 right-1 transition-all group-hover:text-slate-950 dark:group-hover:text-slate-50 group-hover:-translate-y-1 group-hover:translate-x-1"
         ><i class="fa-solid fa-square-arrow-up-right"></i
       ></span>
-      <h3>BSc Computer Science (Hons)</h3>
+      <h3>Master of Science in Data Science</h3>
       <h3
         class="mb-4 transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
       >
-        University of Edinburgh
+        University of Maryland
       </h3>
       <ul class="flex gap-1 flex-wrap" title="Modules completed">
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Machine Learning
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Natural Language Processing
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Big Data Analytics
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Statistical Modeling
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Data Visualization
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Data Engineering
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Probablity and Statistics
+        </li>
+        
+      </ul>
+    </a>
+  </div>
+  
+  <div
+    class="grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4"
+  >
+    <div class="text-sm pb-1 sm:pt-1 sm:pb-0">July 2017 - June 2021</div>
+    <a
+      href="https://vit.ac.in/"
+      target="_blank"
+      class="group relative sm:col-span-3 block"
+    >
+      <span
+        class="absolute top-0 right-1 transition-all group-hover:text-slate-950 dark:group-hover:text-slate-50 group-hover:-translate-y-1 group-hover:translate-x-1"
+        ><i class="fa-solid fa-square-arrow-up-right"></i
+      ></span>
+      <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+      <h3
+        class="mb-4 transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+      >
+        Vellore Institute of Technology
+      </h3>
+      <ul class="flex gap-1 flex-wrap" title="Modules completed">
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Machine Learning
+        </li>
+        
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
+          Image Processing
+        </li>
         
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
@@ -857,86 +1310,31 @@ x-bind:class="darkMode ? 'dark' : '' ">
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
         >
-          Database Systems
+          Operating Systems
         </li>
         
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
         >
-          Computer Graphics
+          Database Management Systems
         </li>
         
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
         >
-          Networks
-        </li>
-        
-      </ul>
-    </a>
-  </div>
-  
-  <div
-    class="grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4"
-  >
-    <div class="text-sm pb-1 sm:pt-1 sm:pb-0">Jan 2024</div>
-    <a
-      href="https://www.boot.dev/"
-      target="_blank"
-      class="group relative sm:col-span-3 block"
-    >
-      <span
-        class="absolute top-0 right-1 transition-all group-hover:text-slate-950 dark:group-hover:text-slate-50 group-hover:-translate-y-1 group-hover:translate-x-1"
-        ><i class="fa-solid fa-square-arrow-up-right"></i
-      ></span>
-      <h3>Fullstack refresher courses</h3>
-      <h3
-        class="mb-4 transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
-      >
-        Boot.Dev
-      </h3>
-      <ul class="flex gap-1 flex-wrap" title="Modules completed">
-        
-        <li
-          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
-        >
-          Go
+          Computer Networks
         </li>
         
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
         >
-          Docker
+          Artificial Intelligence
         </li>
         
         <li
           class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
         >
-          Kubernetes
-        </li>
-        
-        <li
-          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
-        >
-          Python
-        </li>
-        
-        <li
-          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
-        >
-          HTTP
-        </li>
-        
-        <li
-          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
-        >
-          JavaScript
-        </li>
-        
-        <li
-          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
-        >
-          Algorithms
+          Software Engineering
         </li>
         
       </ul>
@@ -1105,3 +1503,6 @@ x-bind:class="darkMode ? 'dark' : '' ">
 </div>
 
 </body>
+</html>
+
+

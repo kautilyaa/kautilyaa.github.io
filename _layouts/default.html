@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-GB" }}" class="scroll-smooth" x-data="{
 darkMode: localStorage.theme === 'dark' || ( !('theme' in localStorage) &&
@@ -133,7 +136,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
             <a
               href="#learning-focus"
               class="group dark:hover:text-slate-50 transition-all"
-              >Learning focus
+              >Skills
               <span
                 class="inline-block ml-1 transition-transform group-hover:translate-x-1"
               >
@@ -156,6 +159,39 @@ x-bind:class="darkMode ? 'dark' : '' ">
               href="#testimonials"
               class="group dark:hover:text-slate-50 transition-all"
               >Testimonials
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Projects
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#publications"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Publications & Patents
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#achievements"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Achievements
               <span
                 class="inline-block ml-1 transition-transform group-hover:translate-x-1"
               >
@@ -190,11 +226,13 @@ x-bind:class="darkMode ? 'dark' : '' ">
         </ul>
       </header>
       <main class="py-16 lg:w-1/2">
-        <!-- prettier-ignore -->
         {% include about-me.html %}
         {% include learning-focus.html %}
         {% include professional-experience.html %}
         {% include testimonials.html %}
+        {% include projects.html %}
+        {% include publications.html %}
+        {% include achievements.html %}
         {% include qualifications.html %}
         {% include made-with-care.html %}
       </main>
@@ -202,3 +240,6 @@ x-bind:class="darkMode ? 'dark' : '' ">
   </div>
   {% include shooting-stars.html %}
 </body>
+</html>
+
+

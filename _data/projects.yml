@@ -1,0 +1,8 @@
+- name: "Project A"
+  description: "A description of Project A."
+  url: "https://example.com/project-a"
+  image: "/path/to/project-a-image.png"
+- name: "Project B"
+  description: "A description of Project B."
+  url: "https://example.com/project-b"
+  image: "/path/to/project-b-image.jpg"

@@ -1,0 +1,16 @@
+- year: 2019
+  category: Competition
+  title: "Winner, Smart India Hackathon"
+  description: "Developed a customer support automation solution, winning the national hackathon."
+- year: 2022
+  category: Recognition
+  title: "Top Performer at Optum Global Solutions"
+  description: "Awarded for deploying ML models that reduced processing time by 40%."
+- year: 2022
+  category: Patent
+  title: "Filed Patent for Image Similarity Model"
+  description: "Secured a patent for an innovative model in form processing automation."
+- year: 2022
+  category: Speaker
+  title: "AI for Business Summit"
+  description: "Delivered a talk on leveraging computer vision for automation."

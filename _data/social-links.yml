@@ -1,14 +1,14 @@
 - username: kautilyaa
   icon: github
   url: https://github.com/jcarroll-ls
-  note: Work
+#   note: Work
 
-- username: jonnycarroll
-  icon: github
-  url: https://github.com/jonnycarroll
+# - username: jonnycarroll
+#   icon: github
+#   url: https://github.com/jonnycarroll
   note: Personal
 
-- username: jonny-carroll
+- username: arunbh
   icon: linkedin
   url: https://linkedin.com/in/jonny-carroll
 
