@@ -4,12 +4,12 @@
 Thumbs.db
 
 # Bundler dependencies
-/vendor/bundle/
+# /vendor/bundle/
 /Gemfile.lock
 
 # Jekyll specific
-/.sass-cache/
-/.jekyll-cache/
+# /.sass-cache/
+# /.jekyll-cache/
 
 # VSCode settings (if applicable)
 .vscode/
