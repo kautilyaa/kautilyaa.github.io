@@ -12,7 +12,6 @@ Thumbs.db
 /Gemfile.lock
 
 # Jekyll specific
-/_site/
 /.sass-cache/
 /.jekyll-cache/
 
