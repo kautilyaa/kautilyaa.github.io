@@ -1,7 +1,3 @@
-# Logs and database
-*.log
-*.sqlite3
-*.sqlite3-journal
 
 # OS generated files
 .DS_Store
@@ -15,17 +11,8 @@ Thumbs.db
 /.sass-cache/
 /.jekyll-cache/
 
-# Node dependencies
-/node_modules/
-
-# Miscellaneous
-*.swp
-*.swo
-*~
-*.bak
-
 # VSCode settings (if applicable)
 .vscode/
 
 # TailwindCSS files (optional)
-/public/css/tailwind.css
+# /public/css/tailwind.css/
