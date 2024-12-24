@@ -20,6 +20,8 @@ gem "logger"
 gem "bigdecimal", "~> 3.1.8"
 gem "base64"
 gem "ostruct"
+gem "jekyll-theme-minimal"
+
 
 # Lock `http_parser.rb` gem to `v0.8.x`
 gem "http_parser.rb", "~> 0.8.0"
