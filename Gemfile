@@ -1,7 +1,12 @@
 source "https://rubygems.org"
 
-# Specify the Jekyll version
 gem "jekyll", "~> 3.10.0"
+gem "minima", "= 2.5.1"
+
+gem "github-pages", "~> 232", group: :jekyll_plugins
+
+# Specify the Jekyll version
+# gem "jekyll", "~> 3.10.0"
 
 # Markdown parser plugin
 gem "kramdown-parser-gfm"
@@ -12,12 +17,12 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8.0"
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "minima", "~> 2.5.2"
+  # gem "minima", "~> 2.5.2"
 end
 
 # Add gems required for Ruby 3.3.x compatibility
 gem "logger"
-gem "bigdecimal", "~> 3.1.8"
+gem "bigdecimal", "~> 3.1.5"
 gem "base64"
 gem "ostruct"
 gem "jekyll-theme-minimal"
