@@ -1,24 +1,21 @@
-
-# Welcome to Jekyll!
-
 # Site settings
 title: Arunbh Yashaswi
 email: arunbh.y@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Portfolio and online resume for Arunbh Yashaswi
 
 # Base URL and domain settings
-baseurl: "" # "/kautilyaa" # the subpath of your site, e.g. /kautilyaa
-domain: kautilyaa.github.io       # GitHub Pages domain, without http
-url: https://kautilyaa.github.io  # the base hostname and protocol for your site
+baseurl: "" # Repository name as subpath (e.g., https://kautilyaa.github.io/kautilyaa)
+url: "https://kautilyaa.github.io" # GitHub Pages domain
 
 # Build settings
-theme: minima # specify a theme supported by GitHub Pages
-plugins: # GitHub Pages-approved plugins
+theme: minima # GitHub Pages-supported theme
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Excluded files and folders
+# Exclude these files/folders from the build
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -32,7 +29,7 @@ exclude:
   - vendor/ruby/
   - run-dev.sh
 
-# Sass and Tailwind CSS settings
+# Sass and Tailwind CSS settings (optional)
 sass:
   load_paths:
     - _sass
@@ -40,6 +37,77 @@ sass:
 
 include:
   - node_modules/tailwindcss
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM # Use GitHub Flavored Markdown
+
+# Defaults for posts/pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Sitemap settings
+sitemap:
+  exclude:
+    - "/404.html"
+  filename: "sitemap.xml"
+  changefreq: "weekly"
+
+# Deployment settings for GitHub Pages
+github:
+  metadata: true
+
+# Jekyll Feed configuration
+feed:
+  path: feed.xml
+
+
+# # Welcome to Jekyll!
+
+# # Site settings
+# title: Arunbh Yashaswi
+# email: arunbh.y@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Portfolio and online resume for Arunbh Yashaswi
+
+# # Base URL and domain settings
+# baseurl: "" # "/kautilyaa" # the subpath of your site, e.g. /kautilyaa
+# domain: kautilyaa.github.io       # GitHub Pages domain, without http
+# url: https://kautilyaa.github.io  # the base hostname and protocol for your site
+
+# # Build settings
+# theme: minima # specify a theme supported by GitHub Pages
+# plugins: # GitHub Pages-approved plugins
+#   - jekyll-feed
+#   - jekyll-seo-tag
+
+# # Excluded files and folders
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - run-dev.sh
+
+# # Sass and Tailwind CSS settings
+# sass:
+#   load_paths:
+#     - _sass
+#     - node_modules
+
+# include:
+#   - node_modules/tailwindcss
 
 
 
