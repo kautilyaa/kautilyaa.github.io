@@ -9,7 +9,8 @@ baseurl: "" # Repository name as subpath (e.g., https://kautilyaa.github.io/kaut
 url: "https://kautilyaa.github.io" # GitHub Pages domain
 
 # Build settings
-theme: minima # GitHub Pages-supported theme
+# theme: minima # GitHub Pages-supported theme
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
