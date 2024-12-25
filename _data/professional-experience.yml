@@ -6,12 +6,10 @@
   period-label: 1 year 4 months
   description: >
     Developed and deployed machine learning models for automated data extraction 
-    and templated form processing, achieving a 40% reduction in processing time 
-    and a 32% increase in throughput. Patented an image similarity model for 
-    enhanced form processing accuracy. Leveraged NLP techniques such as semantic 
-    analysis, table extraction, and edge detection to deliver modular services. 
-    Achieved a 96% accuracy rate and 42% faster processing for non-templated 
-    document matching using MPNet transformers.
+    and templated form processing, achieving a 40% reduction in processing time and a 32% increase in throughput. 
+    Patented an image similarity model for enhanced form processing accuracy. 
+    Leveraged NLP techniques such as semantic analysis, table extraction, and edge detection to deliver modular services. 
+    Achieved a 96% accuracy rate and 42% faster processing for non-templated document matching using MPNet transformers.
   technologies:
     - Python
     - Azure

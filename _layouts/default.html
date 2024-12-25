@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-GB" }}" class="scroll-smooth" x-data="{
 darkMode: localStorage.theme === 'dark' || ( !('theme' in localStorage) &&
@@ -30,38 +27,31 @@ x-bind:class="darkMode ? 'dark' : '' ">
     href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
-  <script type="text/javascript">
-    window.onload = function () {
-      var mouseX = 0;
-      var mouseY = 0;
-      const mouseRect = 50;
-      document.onmousemove = (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      };
-      const shootingStars = document.getElementsByClassName("star");
-      setInterval(() => {
-        for (let i = 0; i < shootingStars.length; i++) {
-          const elem = shootingStars[i];
-          const rect = elem.getBoundingClientRect();
-          if (
-            rect.x >= mouseX - mouseRect &&
-            rect.x <= mouseX + mouseRect &&
-            rect.y >= mouseY - mouseRect &&
-            rect.y <= mouseY + mouseRect
-          ) {
-            elem.classList.add("hover");
-          } else {
-            elem.classList.remove("hover");
-          }
-        }
-      }, 100);
-    };
-  </script>
 </head>
 <body
   class="relative bg-slate-300 dark:bg-slate-900 text-lg text-slate-800 dark:text-slate-300 antialiased font-display"
 >
+  <!-- Social Links at the Top -->
+  <div class="w-full flex justify-center py-4 bg-slate-200 dark:bg-slate-800">
+    <ul class="flex gap-4"> <!-- Reduced gap -->
+      {% for social in site.data.social-links %}
+      <li>
+        <a
+          title="{{ social.icon }} {{ social.note }}"
+          href="{{ social.url }}"
+          target="_blank"
+          class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
+        >
+          <svg class="w-6 h-6" role="img"> <!-- Compact size -->
+            <use xlink:href="/assets/minima-social-icons.svg#{{ social.icon }}"></use>
+          </svg>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Dark/Light Mode Toggle Buttons -->
   <div
     class="fixed z-10 top-2 right-2 p-1 inline-block gap-1 shadow-md rounded-md backdrop-blur-sm bg-white/30 dark:bg-black/30 text-sm"
   >
@@ -97,6 +87,8 @@ x-bind:class="darkMode ? 'dark' : '' ">
       <i class="fa-solid fa-gear"></i>
     </button>
   </div>
+
+  <!-- Main Content -->
   <div class="lg:max-w-screen-lg lg:mx-auto">
     <div class="px-6 lg:px-0 lg:flex">
       <header class="pt-12 lg:sticky lg:top-0 lg:h-dvh lg:w-1/2 lg:pt-16">
@@ -119,127 +111,11 @@ x-bind:class="darkMode ? 'dark' : '' ">
           <strong class="font-semibold text-slate-950 dark:text-slate-50">drive</strong>
           impactful decisions through data.
         </div>
-        
-        <ul class="hidden lg:block">
-          <li>
-            <a
-              href="#about-me"
-              class="group dark:hover:text-slate-50 transition-all"
-              >About me
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#learning-focus"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Skills
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#professional-experience"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Professional experience
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#testimonials"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Testimonials
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Projects
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#publications"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Publications & Patents
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#achievements"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Achievements
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i></span
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#qualifications"
-              class="group dark:hover:text-slate-50 transition-all"
-              >Qualifications
-              <span
-                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
-              >
-                <i class="fa-solid fa-arrow-right fa-xs"></i
-              ></span>
-            </a>
-          </li>
-        </ul>
-        <ul class="flex gap-6 lg:absolute lg:inset-x-0 lg:bottom-16">
-          {% for social in site.data.social-links %}
-          <li class="relative">
-            <a
-              title="{{ social.icon }} {{ social.note }}"
-              href="{{ social.url }}"
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
-              ><i class="fa-brands fa-{{ social.icon }} fa-2x"></i
-            ></a>
-          </li>
-          {% endfor %}
-        </ul>
       </header>
       <main class="py-16 lg:w-1/2">
-        {% include about-me.html %}
-        {% include learning-focus.html %}
-        {% include professional-experience.html %}
-        {% include testimonials.html %}
-        {% include projects.html %}
-        {% include publications.html %}
-        {% include achievements.html %}
-        {% include qualifications.html %}
-        {% include made-with-care.html %}
+        {{ content }}
       </main>
     </div>
   </div>
-  {% include shooting-stars.html %}
 </body>
 </html>
-
-

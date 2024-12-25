@@ -1,19 +1,12 @@
 - username: kautilyaa
   icon: github
-  url: https://github.com/jcarroll-ls
-#   note: Work
-
-# - username: jonnycarroll
-#   icon: github
-#   url: https://github.com/jonnycarroll
+  url: https://kautilyaa.github.io/
   note: Personal
 
-- username: arunbh
+- username: arunbh-yashaswi
   icon: linkedin
-  url: https://linkedin.com/in/jonny-carroll
+  url: https://www.linkedin.com/in/arunbh-yashaswi/
 
-- username: jonnycarroll.dev
-  icon: bluesky
-  url: https://bsky.app/profile/jonnycarroll.dev
-
-  #['all', 'data', 'machine-learning', 'backend', 'frameworks', 'languages']
+- username: arunbh
+  icon: stackoverflow
+  url: https://stackoverflow.com/users/13945615/arunbh-yashaswi
