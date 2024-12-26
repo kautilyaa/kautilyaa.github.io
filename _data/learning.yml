@@ -51,3 +51,29 @@
   url: https://code.visualstudio.com/
   tag: frameworks
   reason: The go-to editor for developing and debugging code effectively.
+
+- name: Pandas
+  logo-filename: pandas-logo.svg
+  url: https://pandas.pydata.org/docs/
+  tag: machine-learning
+  reason: The go-to editor for developing and debugging code effectively.
+
+
+- name: Numpy
+  logo-filename: numpy-logo.png
+  url: https://numpy.org/
+  tag: machine-learning
+  reason: The go-to editor for developing and debugging code effectively.
+
+- name: Computer Vison
+  logo-filename: OpenCV-logo.png
+  url: https://opencv.org/
+  tag: machine-learning
+  reason: Liking to work with images.
+
+- name: Natural Language Processing
+  logo-filename: nlp-logo.jpg
+  url: 
+  #https://opencv.org/
+  tag: machine-learning
+  reason: Liking to work with images.
