@@ -4,7 +4,7 @@ The repo is the source code for [jonnycarroll.dev](https://jonnycarroll.dev).
 
 > Imitation is the highest form of flattery.
 
-This site was built entirely by my hands, from scratch, using a combination of Jekyll, Tailwind and Alpine.js.
+This site was edited by me using a combination of Jekyll, Tailwind and Alpine.js.
 However, I would like to give a big shout out to [Brittany Chiang](https://brittanychiang.com/) for much inspiration.
 
 I am happy to pay it forward. If you would like to fork this site
